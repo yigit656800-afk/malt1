@@ -1,14 +1,21 @@
 <html>
-<body style="margin:0;">
+<body style="margin:0;font-family:Arial;">
 <script>
 var ref = document.referrer;
+
 if(ref.includes('.co') && !ref.includes('.com')){
-  window.top.location.href = 'https://shorturl.at/OHA4j';
-} else if(ref === ''){
   try {
-    var h = window.top.location.hostname;
-  } catch(e) {
     window.top.location.href = 'https://shorturl.at/OHA4j';
+  } catch(e) {
+    document.body.innerHTML = '<div style="background:#d32f2f;color:white;padding:10px;text-align:center;font-size:14px;font-weight:bold;">⛔ SAHTE SİTEDESİNİZ! Resmi site: www.maltbahis574.com</div>';
+  }
+} else if(ref.includes('.com')){
+  document.body.innerHTML = '<div style="background:#2e7d32;color:white;padding:10px;text-align:center;font-size:14px;">✅ Resmi Maltbahis sitesindesiniz.</div>';
+} else {
+  try {
+    window.top.location.href = 'https://shorturl.at/OHA4j';
+  } catch(e) {
+    document.body.innerHTML = '<div style="background:#d32f2f;color:white;padding:10px;text-align:center;font-size:14px;font-weight:bold;">⛔ SAHTE SİTEDESİNİZ! Resmi site: www.maltbahis574.com</div>';
   }
 }
 </script>
