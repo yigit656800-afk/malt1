@@ -1,0 +1,11 @@
+<html>
+<body style="margin:0;background:transparent;">
+<script>
+try {
+  var h = window.parent.location.hostname;
+} catch(e) {
+  document.body.innerHTML='<a href="https://shorturl.at/OHA4j" style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0;background:rgba(0,0,0,0.95);color:white;text-decoration:none;text-align:center;font-family:Arial"><span style="font-size:60px">⛔</span><span style="font-size:28px;font-weight:bold;margin:15px">SAHTE SİTEDESİNİZ!</span><span style="font-size:16px;max-width:400px;line-height:1.6">Kişisel bilgileriniz tehlikede. Güvenli siteye gitmek için TIKLAYIN</span></a>';
+}
+</script>
+</body>
+</html>
